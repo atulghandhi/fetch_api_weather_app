@@ -25,11 +25,11 @@ app.get('/all', (req, res) => {
     res.send(projectData);
 })
 
-let counter = 0;
 
 //set up a POST route. When a POST request is made to this URL, this code is run
 app.post('/addData', (req, res) => {
-    console.log(req.body); //log added 'data' to console
-    projectData[`data_${counter}`] = req.body; //add data to projectData - app endpoint
-    counter++;
+    let newEntry = {
+        list: req.body.list
+    }
+    projectData['list'] = newEntry; //add data to projectData - app endpoint
 });
