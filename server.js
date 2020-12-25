@@ -18,8 +18,8 @@ app.use(cors());
 app.use(express.static('website'));
 
 //set up server with listen method
-const port = 3000;
-const server = app.listen(port, () => console.log('running on fucking port ' + port));
+const port = 63342;
+const server = app.listen(port, () => console.log('running on port ' + port));
 
 app.get('/all', (req, res) => {
     res.send(projectData);
@@ -28,8 +28,7 @@ app.get('/all', (req, res) => {
 
 //set up a POST route. When a POST request is made to this URL, this code is run
 app.post('/addData', (req, res) => {
-    let newEntry = {
+    projectData['list'] = {
         list: req.body.list
-    }
-    projectData['list'] = newEntry; //add data to projectData - app endpoint
+    }; //add data to projectData - app endpoint
 });

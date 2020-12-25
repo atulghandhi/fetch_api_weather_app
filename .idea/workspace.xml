@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d40909d5-9e15-4c71-bad4-a408a9a20302" name="Default Changelist" comment="added server code">
+    <list default="true" id="d40909d5-9e15-4c71-bad4-a408a9a20302" name="Default Changelist" comment="server now makes fetch call to get weather data from api, then posts that data to local server.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website/CSS/main_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/website/CSS/main_style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/website/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website/index.html" afterDir="false" />
     </list>
@@ -68,7 +69,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608399627200</updated>
       <workItem from="1608399628537" duration="16276000" />
-      <workItem from="1608720176031" duration="3879000" />
+      <workItem from="1608720176031" duration="4373000" />
+      <workItem from="1608840137173" duration="14161000" />
     </task>
     <task id="LOCAL-00001" summary="added server code">
       <created>1608588390282</created>
@@ -77,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608588390283</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="server now makes fetch call to get weather data from api, then posts that data to local server.">
+      <created>1608762087676</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1608762087676</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,30 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added server code" />
-    <option name="LAST_COMMIT_MESSAGE" value="added server code" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/website/app.js</url>
-          <line>35</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/website/app.js</url>
-          <line>30</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/website/app.js</url>
-          <line>8</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="server now makes fetch call to get weather data from api, then posts that data to local server." />
+    <option name="LAST_COMMIT_MESSAGE" value="server now makes fetch call to get weather data from api, then posts that data to local server." />
   </component>
 </project>
