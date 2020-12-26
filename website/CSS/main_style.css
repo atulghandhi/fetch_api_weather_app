@@ -14,6 +14,18 @@ body {
     background: var(--primary-color);
 }
 
+h1{
+    margin: 20px 0 30px 20px;
+
+    color: #88d9d0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+}
+
 .wrapper{
     color: var(--text-color);
 
@@ -71,10 +83,6 @@ body {
     width: fit-content;
 }
 
-.searchbar{
-    float: right;
-}
-
 #cards-container{
     display: flex;
     flex-direction: column;
@@ -82,11 +90,11 @@ body {
 }
 
 .card{
-    width: 320px;
+    width: 490px;
     display: grid;
     grid-template-columns: repeat(5, 60px);
-    grid-template-areas: "today today temp1 temp1 temp1"
-                         "temp2 temp3 temp4 temp5 temp6";
+    grid-template-areas: "today today today today temp1 temp1 temp1 temp1"
+                         "temp2 temp3 temp4 temp5 temp6 temp7 temp8 temp9";
 
     grid-gap: 5px;
     border-radius: 15px;
@@ -101,28 +109,52 @@ body {
 
 .sec1{
     grid-area: today;
+    color: #89d1dc;
+    font-family: "Great Vibes",
+    cursive;
+    font-size: 65px;
+    line-height: 50px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    text-align: center;
+    text-shadow: 0 1px 1px #aff28b;
+}
+
+.secDescription{
+    grid-area: temp1;
+    margin: auto;
+    font-size: 45px;
 }
 
 .sec2{
-    grid-area: temp1;
-}
-
-.sec3{
     grid-area: temp2;
 }
 
-.sec4{
+.sec3{
     grid-area: temp3;
 }
 
-.sec5{
+.sec4{
     grid-area: temp4;
 }
 
-.sec6{
+.sec5{
     grid-area: temp5;
 }
 
-.sec7{
+.sec6{
     grid-area: temp6;
+}
+
+.sec7{
+    grid-area: temp7;
+}
+
+.sec8{
+    grid-area: temp8;
+}
+
+.sec9{
+    grid-area: temp9;
 }

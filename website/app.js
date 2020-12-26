@@ -43,9 +43,8 @@ getRequest(url).then( function (data) {
 function addDataToUI(allWeatherData){
     console.log(allWeatherData);
     const current = new Date().getHours();
-    if(current>21){
-        //do-nothing
-    }else if(current>18){
+
+    if(current>18){
         createWeatherBox(allWeatherData.splice(0, 1));
     }else if(current>15){
         createWeatherBox(allWeatherData.splice(0, 2));
@@ -61,11 +60,11 @@ function addDataToUI(allWeatherData){
         createWeatherBox(allWeatherData.splice(0, 7));
     }
 
-    createWeatherBox(allWeatherData.slice(0, 7));
-    createWeatherBox(allWeatherData.slice(8, 15));
-    createWeatherBox(allWeatherData.slice(16, 23));
-    createWeatherBox(allWeatherData.slice(24, 31));
-    createWeatherBox(allWeatherData.slice(32, 39));
+    createWeatherBox(allWeatherData.slice(0, 8));
+    createWeatherBox(allWeatherData.slice(8, 16));
+    createWeatherBox(allWeatherData.slice(16, 24));
+    createWeatherBox(allWeatherData.slice(24, 32));
+    createWeatherBox(allWeatherData.slice(32, allWeatherData.length));
 }
 
 function createWeatherBox(dayWeatherData){
@@ -74,6 +73,10 @@ function createWeatherBox(dayWeatherData){
     const day = createElement('div', 'sec sec1'); //create element to hold date
     day.textContent = getDayName(new Date(dayWeatherData[0].dt * 1000).getDay());
     cardDiv.appendChild(day)
+
+    const dayDesc = createElement('div', 'sec secDescription'); //create element to hold date
+    dayDesc.textContent = dayWeatherData[0].weather[0].main;
+    cardDiv.appendChild(dayDesc)
 
     for(let i = 0; i<dayWeatherData.length; i++) {
 
